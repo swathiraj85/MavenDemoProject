@@ -1,5 +1,5 @@
 package org.auto.myselcukes.dataprovider;
-// config reader 
+// config reader  
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
