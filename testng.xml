@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="BDD Test Suite" verbose="1" parallel="tests" thread-count="2" configfailurepolicy="continue">
+   <listeners>
+</listeners>
+ <test name="Sel Cukes tests Chrome" annotations="JDK" preserve-order="true">
+ 
+ <parameter name="Browser" value="chrome"></parameter>
+
+        <classes>
+<!--             //<class name="org.auto.myselcuckesproj.myselcukes.TestRunner"/> -->
+            <class name="org.auto.myselcuckesproj.myselcukes.HandlingMultipleWindows"/>
+        </classes>
+    </test>
+    <test name="Sel Cukes tests IE" annotations="JDK" preserve-order="true">
+    <parameter name="Browser" value="ie"></parameter>
+   
+        <classes>
+<!--             //<class name="org.auto.myselcuckesproj.myselcukes.TestRunner"/> -->
+            <class name="org.auto.myselcuckesproj.myselcukes.HandlingMultipleWindows"/>
+        </classes>
+    </test>
+</suite>
